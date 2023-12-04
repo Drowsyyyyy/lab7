@@ -28,20 +28,23 @@ class ListExamples {
       if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
         result.add(list1.get(index1));
         index1 += 1;
+        System.out.println(index1);
       }
       else {
         result.add(list2.get(index2));
         index2 += 1;
+        System.out.println(index2);
       }
     }
     while(index1 < list1.size()) {
       result.add(list1.get(index1));
       index1 += 1;
+      System.out.println(index1);
     }
     while(index2 < list2.size()) {
       result.add(list2.get(index2));
-      // change index1 below to index2 to fix test
-      index1 += 1;
+      index2 += 1;
+      System.out.println(index1);
     }
     return result;
   }
